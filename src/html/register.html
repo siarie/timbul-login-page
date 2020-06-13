@@ -1,0 +1,48 @@
+{% extends "_includes/base.html" %} {% block title %}
+Register
+{% endblock %} {% block content %}
+<div class="box shadow-1">
+  <div class="logo shadow-1">
+    <div class="head"></div>
+    <div class="body"></div>
+  </div>
+
+  <form action="" method="post" class="form">
+    <div class="input with-icon">
+      <div class="input-icon shadow-2">
+        <i data-feather="at-sign"></i>
+      </div>
+      <input type="email" placeholder="Email" class="input-form shadow:in-1" />
+    </div>
+    <div class="input with-icon">
+      <div class="input-icon shadow-2">
+        <i data-feather="lock"></i>
+      </div>
+      <input
+        type="password"
+        placeholder="Password"
+        class="input-form shadow:in-1"
+      />
+    </div>
+
+    <div class="input with-icon">
+        <div class="input-icon shadow-2">
+          <i data-feather="repeat"></i>
+        </div>
+        <input
+          type="password"
+          placeholder="Re-Type Password"
+          class="input-form shadow:in-1"
+        />
+      </div>
+    <div class="input marginless">
+      <button type="submit" placeholder="Password" class="button-full shadow-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+  <small class="register-text"
+    >Already have an account? <a href="login.html">Sign In</a></small
+  >
+</div>
+{% endblock %}

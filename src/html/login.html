@@ -1,0 +1,35 @@
+{% extends "_includes/base.html" %} {% block title %}
+<title>Login</title>
+{% endblock %} {% block content %}
+<div class="box shadow-1">
+  <div class="logo shadow-1">
+    <div class="head"></div>
+    <div class="body"></div>
+  </div>
+
+  <form action="" method="post" class="form">
+    <div class="input">
+      <input
+        type="text"
+        placeholder="Email or username"
+        class="input-form shadow:in-1"
+      />
+    </div>
+    <div class="input">
+      <input
+        type="password"
+        placeholder="Password"
+        class="input-form shadow:in-1"
+      />
+    </div>
+    <div class="input marginless">
+      <button type="submit" placeholder="Password" class="button-full shadow-2">
+        Sign In
+      </button>
+    </div>
+  </form>
+  <small class="register-text"
+    >Don't have an account? <a href="register.html">Register</a></small
+  >
+</div>
+{% endblock %}
