@@ -3,7 +3,8 @@ var gulp = require("gulp"),
   nunjucksRender = require("gulp-nunjucks"),
   rename = require("gulp-rename"),
   cleanCSS = require("gulp-clean-css"),
-  browserSync = require("browser-sync").create();
+  browserSync = require("browser-sync").create(),
+  del = require("del");
 
 var paths = {
   input: {
@@ -20,6 +21,12 @@ var paths = {
     sass: "./src/scss/**/*.scss",
   },
 };
+
+function cleanFirst(done) {
+  del.sync([paths.output.html]);
+
+  return done();
+}
 
 function style() {
   return gulp
@@ -63,3 +70,4 @@ function watch() {
 }
 
 exports.default = gulp.series(style, html, startServer, watch);
+exports.build = gulp.series(cleanFirst, style, html);

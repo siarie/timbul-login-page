@@ -6,10 +6,12 @@
   "author": "Sri Aspari",
   "license": "MIT",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-nunjucks": "^5.0.1",
