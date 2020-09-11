@@ -1778,10 +1778,10 @@ gulp-cli@^2.2.0:
     v8flags "^3.2.0"
     yargs "^7.1.0"
 
-gulp-nunjucks@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/gulp-nunjucks/-/gulp-nunjucks-5.0.1.tgz#b1b34b9af3f9ba7571a49a1b715aa793fa419950"
-  integrity sha512-rg2n86trGEz/6sQ01U0/GNGAlC/eIvsKBk5Tmz2brRREgqOALb9aBYVo24jUzGfKALVHALKjikufv0roqsXB6g==
+gulp-nunjucks@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/gulp-nunjucks/-/gulp-nunjucks-5.0.2.tgz#c56b59b760d0eb4a0d0bdac602e0d8457191e996"
+  integrity sha512-B921HFHK1ACNbSOO35kA+nA5fVduUt4rEuCUbqHQ/nfrCTzRk/+cwYmwBsu8kOx1djyqnHTPj4z5nv78vjLjMA==
   dependencies:
     nunjucks "^3.2.0"
     plugin-error "^1.0.1"
