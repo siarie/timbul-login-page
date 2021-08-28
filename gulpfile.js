@@ -1,5 +1,5 @@
 var gulp = require("gulp"),
-  sass = require("gulp-sass"),
+  sass = require("gulp-sass")(require("sass")),
   nunjucksRender = require("gulp-nunjucks"),
   rename = require("gulp-rename"),
   cleanCSS = require("gulp-clean-css"),
@@ -33,7 +33,7 @@ function style() {
     .src(paths.input.scss)
     .pipe(
       sass({
-        outputStyle: "nested",
+        outputStyle: "expanded",
       }).on("error", sass.logError)
     )
     .pipe(gulp.dest(paths.output.css))
