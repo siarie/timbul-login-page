@@ -5,8 +5,11 @@ Login Template with Neumorphism Design
 [Demo](https://timbul-login.netlify.app/)
 
 ### Preview
-![Login Page](login.png)
-![Login Page](register.png)
+
+| Login Page | Register Page |
+| :--------: | :-----------: |
+| ![Login Page](login.png)| ![Login Page](register.png) |
+
 
 ### Setup
 ```sh
